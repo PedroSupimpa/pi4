@@ -2,6 +2,7 @@
 
 import CommentForm from '@/components/CommentForm';
 import PostForm from '@/components/PostForm';
+import ProfileDashboard from '@/components/ProfileDashboard';
 import ProfileForm from '@/components/ProfileForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -36,6 +37,7 @@ const ScrapePage: React.FC = () => {
           {scrapeType === 'posts' && <PostForm />}
         </CardContent>
       </Card>
+      <ProfileDashboard/>
     </div>
   );
 };
