@@ -13,7 +13,9 @@ const ScrapePage: React.FC = () => {
   const [scrapeType, setScrapeType] = useState<'profile' | 'comments' | 'posts' | null>(null);
 
   return (
-    <div className="container mx-auto p-6">
+    <div>
+
+    <div className="container mx-auto p-6 ">
       <Card className="shadow-lg">
         <CardHeader>
           <CardTitle>
@@ -37,7 +39,10 @@ const ScrapePage: React.FC = () => {
           {scrapeType === 'posts' && <PostForm />}
         </CardContent>
       </Card>
+    </div>
+    <div className='container mx-auto p-6'>
       <ProfileDashboard/>
+    </div>
     </div>
   );
 };
